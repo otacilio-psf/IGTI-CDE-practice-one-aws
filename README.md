@@ -17,7 +17,7 @@ It was made within AWS
 
 ## Architecture
 
-![Architecture](.attachment/architecture.drawio.png "Architecture")
+![Architecture](.attachment/architecture.png "Architecture")
 
 ## Steps
 
