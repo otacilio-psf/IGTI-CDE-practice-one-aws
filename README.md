@@ -15,6 +15,10 @@ It was made within AWS
 3. Create an AWS Glue crawler to catalog the data.
 4. Query the data with AWS Athena.
 
+## Architecture
+
+![Architecture](.attachment/architecture.drawio.png "Architecture")
+
 ## Steps
 
 ### First
