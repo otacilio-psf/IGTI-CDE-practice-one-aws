@@ -20,6 +20,9 @@ I developed locally the PySpark code that will move the raw data to the consumer
 
     The developmet env is insede dev folder and was cloned from https://github.com/otacilio-psf/spark-dev-env-docker
 
+    For local development I use a sample of the data with:
+    head -n 10000 data/DADOS/MICRODADOS_ENEM_2019.csv > dev/sample_data.csv
+
 ### Third
 
 I Run the Spark app inside of the EMR cluster 
