@@ -11,8 +11,8 @@ It was made within AWS
 1. Create an ingestion pipeline for ENEM 2019 data.
     * Source: [Inep Open Data](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem)
     * Target: AWS S3
-2. Move the data inside the data lake from raw-data to consumer-zone (csv -> paquet).
-3. Create an AWS Glue tracker to catalog the data.
+2. Move the data inside the data lake from raw-data to consumer-zone (csv -> parquet).
+3. Create an AWS Glue crawler to catalog the data.
 4. Query the data with AWS Athena.
 
 ## Steps
@@ -34,7 +34,7 @@ I developed locally the PySpark code that will move the raw data to the consumer
 
 ### Third
 
-I process the Spark app inside of the AWS EMR cluster.
+I runned the Spark app inside of the AWS EMR cluster.
 
 ![Spark result](.attachment/spark-app-result.png "Spark result")
 
