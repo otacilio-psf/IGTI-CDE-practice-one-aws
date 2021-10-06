@@ -22,7 +22,7 @@ df = (spark.read.format("csv")
       .option("inferSchema", "true")
       .option("sep", ";")
       .option('encoding', 'ISO-8859-1')
-      .load("sample_data.csv")
+      .load("s3://datalake-ota-823120262488/raw-data/enem/MICRODADOS_ENEM_2019.csv")
 )
 
 df = df.withColumn("year", lit("2019"))
@@ -31,7 +31,7 @@ df = df.withColumn("year", lit("2019"))
 # In[48]:
 
 
-df.write.mode("overwrite").format("parquet").partitionBy("year").save("consumer-zone/enem")
+df.write.mode("overwrite").format("parquet").partitionBy("year").save("s3://datalake-ota-823120262488/consumer-zone/enem")
 
 
 # In[49]:
